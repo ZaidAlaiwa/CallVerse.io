@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Deca:wght@100..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
+    font-family: "Lexend Deca", sans-serif;
 }
 
 body{
@@ -13,11 +13,6 @@ body{
 
 a{
     text-decoration: none;
-    color: #369FFF;
-}
-
-i{
-    font-size: 24px;
 }
 
 .container{
@@ -160,29 +155,113 @@ i{
 .container .left-section .box .inner .card a{
     font-size: 14px;
     font-weight: 400;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .container .left-section .box .inner .card#active a{
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 main{
     background-color: #F7F8FB;
-    padding: 40px 40px 0 40px;
     border-radius: 35px;
+}
+
+main .top{
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    padding: 14px 23px 14px 34px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .top h5{
+    font-size: 20px;
+    color: #0C1D37;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+main .top h4{
+    font-size: 12px;
+    color: #3B4555;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+main .top .profile > i{
+    color: #444750;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+main .top .profile > li{
+    color: #444750;
+    position: relative;
+    cursor: pointer;
+    margin-left: -25px;
+    margin-bottom: 8px;
+}
+
+main .top .profile > i::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background: #F57600;
+    border-radius: 50%;
+    right: 0;
+    margin-bottom: 8px;
+}
+
+main .top .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 264px;
+    height: 40px;
+    gap: 24px;
+    margin-right: 24px;
+}
+
+main .top .profile > i{
+    cursor: pointer;
+}
+
+main .top .profile .right{
+    display: flex;
+    gap: 15px;
+}
+
+main .top .profile .right img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+main .top .profile .right .user a{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #151924;
+}
+
+main .top .profile .right .user p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #444750;
 }
 
 main header{
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-main header h5{
-    font-size: 18px;
-    color: #369FFF;
-    font-weight: 400;
 }
 
 main .separator{
@@ -399,65 +478,6 @@ main .planning .item .left .details p{
 
 main .planning .item > i{
     cursor: pointer;
-}
-
-main .top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-main .top > i{
-    color: #909090;
-    position: relative;
-    cursor: pointer;
-}
-
-main .top > i::after{
-    content: "";
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    background: #EB5757;
-    border-radius: 50%;
-    right: 0;
-}
-
-main .top .profile{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background: #EBF6FF;
-    width: 244px;
-    height: 60px;
-    border-radius: 16px;
-}
-
-main .top .profile > i{
-    cursor: pointer;
-}
-
-main .top .profile .left{
-    display: flex;
-    gap: 15px;
-}
-
-main .top .profile .left img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: top;
-}
-
-main .top .profile .left .user h5{
-    font-size: 14px;
-    font-weight: 600;
-}
-
-main .top .profile .left .user a{
-    font-size: 12px;
 }
 
 /*
