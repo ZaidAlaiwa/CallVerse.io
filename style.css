@@ -159,6 +159,12 @@ a{
     color: rgba(255, 255, 255, 0.7);
 }
 
+main{
+    background-color: #F7F8FB;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
 .menu-btn{
     width: 32px;
     height: 32px;
@@ -176,14 +182,8 @@ a{
     color: #208BEE;
 }
 
-main{
-    background-color: #F7F8FB;
-    border-radius: 35px;
-}
-
 main .top{
     border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
     padding: 14px 23px 14px 34px;
     background-color: #ffffff;
     display: flex;
@@ -276,6 +276,132 @@ main header{
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+main .analytics {
+    padding: 26px 20px 0 20px;
+}
+
+main .analytics h3{
+    color: #0C1D37;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+main .analytics .analytics-boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+main .analytics .analytics-boxes .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 106px;
+    min-width: 248px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+main .analytics .analytics-boxes .item .progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .analytics .analytics-boxes .item .progress .info h5{
+    color: #3B4555;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+main .analytics .analytics-boxes .item .progress .info h4{
+    color: #0C1D37;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+main .analytics .analytics-boxes .item .progress .info p{
+    color: #3B4555;
+    font-size: 12px;
+    font-weight: 400    ;
+    line-height: 20px;
+}
+
+main .analytics .analytics-boxes .item .progress .info p span{
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+main .analytics .analytics-boxes .item .progress .info p span.negative {
+    color: #D22E41;
+}
+
+main .analytics .analytics-boxes .item .progress .info p span.positive {
+    color: #55A55E;
+}
+
+main .analytics .analytics-boxes .item i{
+    font-size: 25px;
+    color: #4318FF;
+    padding: 12px;
+    border-radius: 100%;
+}
+
+main .analytics .analytics-boxes .item:nth-child(1){
+    background: #EEFDFE;
+}
+
+main .analytics .analytics-boxes .item:nth-child(2){
+    background: #F8EAEC;
+}
+
+main .analytics .analytics-boxes .item:nth-child(3){
+    background: #ECE3FB;
+}
+
+main .analytics .analytics-boxes .item:nth-child(4){
+    background: #ffffff;
+}
+
+main .analytics .analytics-boxes .item:nth-child(5){
+    background: #ffffff;
+}
+
+main .analytics .analytics-boxes .item:nth-child(6){
+    background: #ffffff;
+}
+
+main .analytics .analytics-boxes .item:nth-child(1) i {
+    background-color: #FFFFFF;
+}
+
+main .analytics .analytics-boxes .item:nth-child(2) i {
+    background-color: #FFFFFF;
+}
+
+main .analytics .analytics-boxes .item:nth-child(3) i {
+    background-color: #FFFFFF;
+}
+
+main .analytics .analytics-boxes .item:nth-child(4) i {
+    background-color: #F5F5F5;
+}
+
+main .analytics .analytics-boxes .item:nth-child(5) i {
+    background-color: #F5F5F5;
+}
+
+main .analytics .analytics-boxes .item:nth-child(6) i {
+    background-color: #F5F5F5;
 }
 
 /*

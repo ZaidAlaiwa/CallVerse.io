@@ -24,3 +24,19 @@ sidebarItems.forEach(element => {
 
     });
 });
+
+
+//Analytics Percentage - Color Changer
+document.addEventListener('DOMContentLoaded', function() {
+    var spans = document.querySelectorAll('main .analytics .analytics-boxes .item .progress .info p span');
+
+    spans.forEach(function(span) {
+        var content = span.textContent;
+
+        if (content.includes('-')) {
+            span.classList.add('negative');
+        } else if (content.includes('+')) {
+            span.classList.add('positive');
+        }
+    });
+});
