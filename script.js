@@ -29,7 +29,6 @@ sidebarItems.forEach(element => {
 //Analytics Percentage - Color Changer
 document.addEventListener('DOMContentLoaded', function() {
     var spans = document.querySelectorAll('main .analytics .analytics-boxes .item .progress .info p span');
-
     spans.forEach(function(span) {
         var content = span.textContent;
 
@@ -39,4 +38,51 @@ document.addEventListener('DOMContentLoaded', function() {
             span.classList.add('positive');
         }
     });
+});
+
+
+// Converstion Ratio Graph
+const currentDate = new Date();
+const currentMonth = currentDate.getMonth();
+const monthNames = getMonthNames(currentMonth, 6);
+function getMonthNames(startMonth, count) {
+  const monthNames = [];
+  for (let i = startMonth; i > startMonth - count; i--) {
+    const adjustedMonth = (i + 12) % 12; // Adjust for months before January
+    const date = new Date(2024, adjustedMonth, 1); // Using a specific year (e.g., 2024)
+    monthNames.push(date.toLocaleString('en-US', { month: 'long' }));
+  }
+  return monthNames.reverse();
+}
+new Chart("Chart", {
+  type: "line",
+  data: {
+    labels: monthNames,
+    datasets: [{ 
+      data: [0, 1, 0, 1, 0, 1],
+      borderColor: "#7207C7",
+      fill: false
+    }, { 
+      data: [1, 2, 1, 2, 1, 2],
+      borderColor: "#6AD2FF",
+      fill: false
+    }, { 
+      data: [2, 3, 2, 3, 2, 3],
+      borderColor: "#7207C7",
+      fill: false
+    }]
+  },
+  options: {
+    legend: { display: false },
+    scales: {
+      x: {
+        grid: {
+          display: false
+        }
+      },
+      y: {
+        display: false
+      }
+    }
+  }
 });
