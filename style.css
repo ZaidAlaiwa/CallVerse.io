@@ -1,34 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Lexend Deca", sans-serif;
 }
 
-body{
+body {
     background-color: #12172A;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 286px 1fr;
     height: 100vh;
 }
 
-.container .left-section{
+.container .left-section {
     display: flex;
     flex-direction: column;
     background-color: #12172A;
     justify-content: space-between;
 }
 
-.container .left-section .logo{
+.container .left-section .logo {
     display: flex;
     gap: 5px;
     margin-top: 23.75px;
@@ -36,18 +36,18 @@ a{
     margin-left: 16px;
 }
 
-.container .left-section .logo img{
+.container .left-section .logo img {
     width: 22.5px;
     object-fit: cover;
 }
 
-.container .left-section .logo a{
+.container .left-section .logo a {
     font-weight: 600;
     font-size: 16px;
     color: #ffffff;
 }
 
-.container .left-section .sidebar{
+.container .left-section .sidebar {
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -56,14 +56,14 @@ a{
     width: 83.9%;
 }
 
-.container .left-section .sidebar .item{
+.container .left-section .sidebar .item {
     display: flex;
     gap: 10px;
     cursor: pointer;
     padding: 12px 16px;
 }
 
-.container .left-section .sidebar .item .sm-box{
+.container .left-section .sidebar .item .sm-box {
     color: rgba(255, 255, 255, 0.7);
     background-color: #FE7239;
     font-family: "Inter", sans-serif;
@@ -74,25 +74,25 @@ a{
     border-radius: 6px;
 }
 
-.container .left-section .sidebar .item .item-list{
+.container .left-section .sidebar .item .item-list {
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
-.container .left-section .sidebar .item#active{
+.container .left-section .sidebar .item#active {
     background-color: #FE7239;
     border: 1px;
     border-radius: 14px;
 }
 
-.container .left-section .sidebar i{
+.container .left-section .sidebar i {
     color: rgba(255, 255, 255, 0.7);
     transition: all 0.3s ease;
 }
 
-.container .left-section .sidebar a{
+.container .left-section .sidebar a {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -104,16 +104,16 @@ a{
 
 .container .left-section .sidebar .item#active a,
 .container .left-section .sidebar .item#active i,
-.container .left-section .upgrade .link i{
+.container .left-section .upgrade .link i {
     color: #ffffff;
 }
 
-.container .left-section .sidebar .item#active a::after{
+.container .left-section .sidebar .item#active a::after {
     width: 8px;
     height: 8px;
 }
 
-.container .left-section .box{
+.container .left-section .box {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -127,16 +127,16 @@ a{
     width: 83.9%;
 }
 
-.container .left-section .box > i{
+.container .left-section .box>i {
     cursor: pointer;
 }
 
-.container .left-section .box .inner{
+.container .left-section .box .inner {
     display: flex;
     gap: 15px;
 }
 
-.container .left-section .box .inner img{
+.container .left-section .box .inner img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -144,28 +144,28 @@ a{
     object-position: top;
 }
 
-.container .left-section .box .inner .card h5{
+.container .left-section .box .inner .card h5 {
     font-size: 14px;
     font-weight: 500;
 }
 
-.container .left-section .box .inner .card a{
+.container .left-section .box .inner .card a {
     font-size: 14px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7);
 }
 
-.container .left-section .box .inner .card#active a{
+.container .left-section .box .inner .card#active a {
     color: rgba(255, 255, 255, 0.7);
 }
 
-main{
+main {
     background-color: #F7F8FB;
     border-top-left-radius: 35px;
     border-bottom-left-radius: 35px;
 }
 
-.menu-btn{
+.menu-btn {
     width: 32px;
     height: 32px;
     align-items: center;
@@ -177,12 +177,12 @@ main{
     display: none;
 }
 
-.menu-btn i{
+.menu-btn i {
     font-size: 18px;
     color: #208BEE;
 }
 
-main .top{
+main .top {
     border-top-left-radius: 35px;
     padding: 14px 23px 14px 34px;
     background-color: #ffffff;
@@ -191,28 +191,28 @@ main .top{
     justify-content: space-between;
 }
 
-main .top h5{
+main .top h5 {
     font-size: 20px;
     color: #0C1D37;
     font-weight: 500;
     line-height: 25px;
 }
 
-main .top h4{
+main .top h4 {
     font-size: 12px;
     color: #3B4555;
     font-weight: 400;
     line-height: 25px;
 }
 
-main .top .profile > i{
+main .top .profile>i {
     color: #444750;
     position: relative;
     cursor: pointer;
     margin-bottom: 8px;
 }
 
-main .top .profile > li{
+main .top .profile>li {
     color: #444750;
     position: relative;
     cursor: pointer;
@@ -220,7 +220,7 @@ main .top .profile > li{
     margin-bottom: 8px;
 }
 
-main .top .profile > i::after{
+main .top .profile>i::after {
     content: "";
     width: 6px;
     height: 6px;
@@ -231,7 +231,7 @@ main .top .profile > i::after{
     margin-bottom: 8px;
 }
 
-main .top .profile{
+main .top .profile {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -241,16 +241,16 @@ main .top .profile{
     margin-right: 24px;
 }
 
-main .top .profile > i{
+main .top .profile>i {
     cursor: pointer;
 }
 
-main .top .profile .right{
+main .top .profile .right {
     display: flex;
     gap: 15px;
 }
 
-main .top .profile .right img{
+main .top .profile .right img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -258,21 +258,21 @@ main .top .profile .right img{
     object-position: top;
 }
 
-main .top .profile .right .user a{
+main .top .profile .right .user a {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     color: #151924;
 }
 
-main .top .profile .right .user p{
+main .top .profile .right .user p {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
     color: #444750;
 }
 
-main header{
+main header {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -282,14 +282,14 @@ main .analytics {
     padding: 26px 20px 0 20px;
 }
 
-main .analytics h3{
+main .analytics h3 {
     color: #0C1D37;
     font-size: 24px;
     font-weight: 600;
     line-height: 30px;
 }
 
-main .analytics .analytics-boxes{
+main .analytics .analytics-boxes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
@@ -297,7 +297,7 @@ main .analytics .analytics-boxes{
     margin-top: 15px;
 }
 
-main .analytics .analytics-boxes .item{
+main .analytics .analytics-boxes .item {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -307,34 +307,34 @@ main .analytics .analytics-boxes .item{
     border-radius: 20px;
 }
 
-main .analytics .analytics-boxes .item .progress{
+main .analytics .analytics-boxes .item .progress {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-main .analytics .analytics-boxes .item .progress .info h5{
+main .analytics .analytics-boxes .item .progress .info h5 {
     color: #3B4555;
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
 }
 
-main .analytics .analytics-boxes .item .progress .info h4{
+main .analytics .analytics-boxes .item .progress .info h4 {
     color: #0C1D37;
     font-size: 26px;
     font-weight: 600;
     line-height: 32px;
 }
 
-main .analytics .analytics-boxes .item .progress .info p{
+main .analytics .analytics-boxes .item .progress .info p {
     color: #3B4555;
     font-size: 12px;
-    font-weight: 400    ;
+    font-weight: 400;
     line-height: 20px;
 }
 
-main .analytics .analytics-boxes .item .progress .info p span{
+main .analytics .analytics-boxes .item .progress .info p span {
     font-family: "DM Sans", sans-serif;
     font-size: 12px;
     font-weight: 700;
@@ -349,34 +349,34 @@ main .analytics .analytics-boxes .item .progress .info p span.positive {
     color: #55A55E;
 }
 
-main .analytics .analytics-boxes .item i{
+main .analytics .analytics-boxes .item i {
     font-size: 25px;
     color: #4318FF;
     padding: 12px;
     border-radius: 100%;
 }
 
-main .analytics .analytics-boxes .item:nth-child(1){
+main .analytics .analytics-boxes .item:nth-child(1) {
     background: #EEFDFE;
 }
 
-main .analytics .analytics-boxes .item:nth-child(2){
+main .analytics .analytics-boxes .item:nth-child(2) {
     background: #F8EAEC;
 }
 
-main .analytics .analytics-boxes .item:nth-child(3){
+main .analytics .analytics-boxes .item:nth-child(3) {
     background: #ECE3FB;
 }
 
-main .analytics .analytics-boxes .item:nth-child(4){
+main .analytics .analytics-boxes .item:nth-child(4) {
     background: #ffffff;
 }
 
-main .analytics .analytics-boxes .item:nth-child(5){
+main .analytics .analytics-boxes .item:nth-child(5) {
     background: #ffffff;
 }
 
-main .analytics .analytics-boxes .item:nth-child(6){
+main .analytics .analytics-boxes .item:nth-child(6) {
     background: #ffffff;
 }
 
@@ -415,6 +415,136 @@ main .middle-boxes {
 main .middle-boxes .converstion-ratio {
     background-color: #ffffff;
     border-radius: 20px;
+    padding-top: 26px;
+    height: 345px
+}
+
+main .middle-boxes .converstion-ratio .header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+main .middle-boxes .converstion-ratio .header .left {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF1EB;
+    border-radius: 7px;
+    padding: 8px;
+    gap: 3px;
+}
+
+main .middle-boxes .converstion-ratio .header .left i {
+    font-size: 22px;
+    color: #FE7239;
+}
+
+main .middle-boxes .converstion-ratio .header .left p {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FE7239;
+}
+
+main .middle-boxes .converstion-ratio .header .orange-chart {
+    font-size: 22px;
+    background-color: #F4F7FE;
+    color: #FE7239;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+main .middle-boxes .converstion-ratio .title {
+    margin-top: 11px;
+    display: flex;
+    gap: 8px;
+    padding-left: 31.3px;
+}
+
+main .middle-boxes .converstion-ratio .title h4 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #0C1D37;
+}
+
+main .middle-boxes .converstion-ratio .title span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #55A55E;
+    background-color: #E9FFEB;
+    border-radius: 31px;
+    padding: 0 10px;
+    height: 22px;
+    margin-top: 9px;
+}
+
+main .middle-boxes .converstion-ratio .chart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+    padding-left: 29.5px;
+    padding-right: 69.21px;
+}
+
+main .middle-boxes .converstion-ratio .chart .y-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+main .middle-boxes .converstion-ratio .chart .y-labels .line-1 {
+    display: flex;
+    gap: 10px;
+}
+
+main .middle-boxes .converstion-ratio .chart .y-labels .line-1 i {
+    color: #FE7239;
+}
+
+main .middle-boxes .converstion-ratio .chart .y-labels .line-2 {
+    display: flex;
+    gap: 10px;
+}
+
+main .middle-boxes .converstion-ratio .chart .y-labels .line-2 i {
+    color: #6AD2FF;
+}
+
+main .middle-boxes .converstion-ratio .chart .y-labels .line-3 {
+    display: flex;
+    gap: 10px;
+}
+
+main .middle-boxes .converstion-ratio .chart .y-labels .line-3 i {
+    color: #7207C7;
+}
+
+main .middle-boxes .converstion-ratio .chart .y-labels h4 {
+    font-weight: 500;
+    font-size: 12px;
+    color: #3B4555;
+}
+
+#monthNames {
+    display: flex;
+    justify-content: space-between;
+}
+
+.month {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #3B4555;
+    text-align: center;
 }
 
 main .middle-boxes .active-campaigns {
@@ -429,7 +559,7 @@ main .middle-boxes .active-campaigns .header {
 }
 
 main .middle-boxes .active-campaigns .header h4 {
-    font-family:"DM Sans", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
@@ -451,12 +581,33 @@ main .middle-boxes .active-campaigns table {
     border-collapse: collapse;
 }
 
+main .middle-boxes .active-campaigns table tr td i {
+    color: #ffffff;
+    padding: 1px;
+    border-radius: 100%;
+    font-size: 16px;
+}
+
+main .middle-boxes .active-campaigns table tr:nth-child(2) > td > i {
+    background-color: #05CD99;
+}
+main .middle-boxes .active-campaigns table tr:nth-child(3) > td > i {
+    background-color: #EE5D50;
+}
+main .middle-boxes .active-campaigns table tr:nth-child(4) > td > i {
+    background-color: #FFCE20;
+}
+
+main .middle-boxes .active-campaigns table tr:nth-child(5) > td > i {
+    background-color: #05CD99;
+}
+
 main .middle-boxes .active-campaigns table tr:first-child {
     border-bottom: 1px solid #E9EDF7;
     width: 100%;
 }
 
-main .middle-boxes .active-campaigns table th{
+main .middle-boxes .active-campaigns table th {
     font-family: "DM Sans", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -465,7 +616,7 @@ main .middle-boxes .active-campaigns table th{
     padding-left: 31px;
 }
 
-main .middle-boxes .active-campaigns table td{
+main .middle-boxes .active-campaigns table td {
     font-family: "DM Sans", sans-serif;
     font-weight: 700;
     font-size: 14px;

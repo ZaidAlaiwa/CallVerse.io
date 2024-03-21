@@ -4,40 +4,40 @@ const sideBar = document.querySelector('.container .left-section');
 const sidebarItems = document.querySelectorAll('.container .left-section .sidebar .item');
 
 menuOpen.addEventListener('click', () => {
-    sideBar.style.top = '0';
+  sideBar.style.top = '0';
 });
 
 menuClose.addEventListener('click', () => {
-    sideBar.style.top = '-60vh';
+  sideBar.style.top = '-60vh';
 });
 
 let activeItem = sidebarItems[0];
 
 sidebarItems.forEach(element => {
-    element.addEventListener('click', () => {
-        if (activeItem) {
-            activeItem.removeAttribute('id');
-        }
+  element.addEventListener('click', () => {
+    if (activeItem) {
+      activeItem.removeAttribute('id');
+    }
 
-        element.setAttribute('id', 'active');
-        activeItem = element;
+    element.setAttribute('id', 'active');
+    activeItem = element;
 
-    });
+  });
 });
 
 
 //Analytics Percentage - Color Changer
-document.addEventListener('DOMContentLoaded', function() {
-    var spans = document.querySelectorAll('main .analytics .analytics-boxes .item .progress .info p span');
-    spans.forEach(function(span) {
-        var content = span.textContent;
+document.addEventListener('DOMContentLoaded', function () {
+  var spans = document.querySelectorAll('main .analytics .analytics-boxes .item .progress .info p span');
+  spans.forEach(function (span) {
+    var content = span.textContent;
 
-        if (content.includes('-')) {
-            span.classList.add('negative');
-        } else if (content.includes('+')) {
-            span.classList.add('positive');
-        }
-    });
+    if (content.includes('-')) {
+      span.classList.add('negative');
+    } else if (content.includes('+')) {
+      span.classList.add('positive');
+    }
+  });
 });
 
 
@@ -54,35 +54,45 @@ function getMonthNames(startMonth, count) {
   }
   return monthNames.reverse();
 }
+// Display month names in HTML (X Labels)
+const monthNamesDiv = document.getElementById('monthNames');
+monthNames.forEach(month => {
+  const monthDiv = document.createElement('div');
+  monthDiv.textContent = month;
+  monthDiv.classList.add('month');
+  monthNamesDiv.appendChild(monthDiv);
+});
+// Chart
 new Chart("Chart", {
   type: "line",
   data: {
     labels: monthNames,
-    datasets: [{ 
+    datasets: [{
       data: [0, 1, 0, 1, 0, 1],
       borderColor: "#7207C7",
       fill: false
-    }, { 
+    }, {
       data: [1, 2, 1, 2, 1, 2],
       borderColor: "#6AD2FF",
       fill: false
-    }, { 
+    }, {
       data: [2, 3, 2, 3, 2, 3],
-      borderColor: "#7207C7",
+      borderColor: "#FE7239",
       fill: false
     }]
   },
   options: {
     legend: { display: false },
     scales: {
-      x: {
-        grid: {
-          display: false
-        }
-      },
-      y: {
+      xAxes: [{
+        grid: { display: false },
         display: false
-      }
+      }],
+
+      yAxes: [{
+        grid: { display: false },
+        display: false
+      }]
     }
   }
 });
