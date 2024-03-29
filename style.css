@@ -115,6 +115,7 @@ a {
 }
 
 .container .left-section .progress-box {
+    position: relative;
     display: flex;
     height: 263px;
     width: 240px;
@@ -123,6 +124,23 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 11px;
+}
+
+.container .left-section .progress-box .exit-symbol {
+    position: absolute;
+    background-color: #ffffff;
+    top: 14.4px;
+    right: 14.4px;
+    cursor: pointer;
+    padding: 5px;
+    width: 19.2px;
+    height: 19.2px;
+    line-height: 8px;
+    border-radius: 100%;
+    color: #414555;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
 }
 
 .container .left-section .progress-box .progress-item {

@@ -96,3 +96,8 @@ new Chart("Chart", {
     }
   }
 });
+// Exit Symbol
+function hideBox() {
+  var box = document.getElementById("complete-profile");
+  box.style.display = "none";
+}
