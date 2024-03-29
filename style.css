@@ -114,6 +114,77 @@ a {
     height: 8px;
 }
 
+.container .left-section .progress-box {
+    display: flex;
+    height: 263px;
+    width: 240px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 11px;
+}
+
+.container .left-section .progress-box .progress-item {
+    padding: 24px 20px 18px 20px;
+}
+
+.container .left-section .progress-box .progress-item .progress .progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, #414555 70%, transparent 0% 0%),
+        conic-gradient(rgba(28, 193, 77, 1) 40%, #fff 0%);
+}
+
+.container .left-section .progress-box .progress-item .progress .progress-bar::before {
+    content: "40%";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.37px;
+    color: #ffffff;
+}
+
+.container .left-section .progress-box .progress-item .progress h5 {
+    margin-top: 16px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.5px;
+    color: #ffffff;
+}
+
+.container .left-section .progress-box .progress-item .progress h6 {
+    margin-top: 9px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.container .left-section .progress-box .progress-item .progress .profile-btn {
+    margin: 16px 20px 0px 20px;
+    height: 40px;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.container .left-section .progress-box .progress-item .progress .profile-btn a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px;
+    color: #0A1B39;
+    text-decoration: none;
+}
+
 .container .left-section .box {
     display: flex;
     align-items: center;
@@ -123,7 +194,8 @@ a {
     color: #ffffff;
     border-width: 1px;
     border-radius: 14px;
-    margin-left: 16px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 11px;
     width: 83.9%;
 }
